@@ -1,0 +1,24 @@
+{
+  "name": "alura_typescript",
+  "version": "1.0.0",
+  "description": "Alura_TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc",
+    "start": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zimmerr/Alura_TypeScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zimmerr/Alura_TypeScript/issues"
+  },
+  "homepage": "https://github.com/Zimmerr/Alura_TypeScript#readme",
+  "devDependencies": {
+    "typescript": "^2.3.2"
+  }
+}
