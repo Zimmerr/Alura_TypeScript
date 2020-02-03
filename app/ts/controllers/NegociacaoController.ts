@@ -7,8 +7,8 @@ class NegociacaoController {
   // Nao precisa de declaração explicita pois ele infere o tipo
   private _negociacoes = new Negociacoes();
 
-  private _negociacoesView = new NegociacoesView('#negociacoesView');
-  private _mensagemView = new MensagemView('#mensagemView');
+  private _negociacoesView = new Views.NegociacoesView('#negociacoesView');
+  private _mensagemView = new Views.MensagemView('#mensagemView');
 
 
   constructor() {
