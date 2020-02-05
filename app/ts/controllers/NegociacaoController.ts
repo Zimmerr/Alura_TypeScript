@@ -1,10 +1,16 @@
 import { NegociacoesView, MensagemView } from '../views/index';
 import { Negociacoes, Negociacao } from '../models/index';
+import {logarTempoDeExecucao, domInject} from '../helpers/decorators/index';
 
 export class NegociacaoController {
 
+  @domInject('#data')
   private _inputData: JQuery;
+
+  @domInject('#quantidade')
   private _inputQuantidade: JQuery;
+
+  @domInject('#valor')
   private _inputValor: JQuery;
   // private _negociacoes: Negociacoes = new Negociacoes();
   // Nao precisa de declaração explicita pois ele infere o tipo
@@ -15,12 +21,10 @@ export class NegociacaoController {
 
 
   constructor() {
-    this._inputData = <JQuery>$('#data');
-    this._inputQuantidade = <JQuery>$('#quantidade');
-    this._inputValor = <JQuery>$('#valor');
     this._negociacoesView.update(this._negociacoes);
   }
 
+  //@logarTempoDeExecucao()
   adiciona(event: Event): void {
     event.preventDefault();
 
